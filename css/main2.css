@@ -117,21 +117,28 @@ footer {
   width: 100%;
 }
 
-main {
-  background-color: rgba(12, 150, 225, .5);
-  color: #fff;
-  height: 250px;
-  width: 100%;
-  border-bottom: 6px solid orange;
+.flex-container {
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    border: 6px solid orange;
 }
 
-
-footer,
-main {
+.flex-items {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
+    font-size: 1.2rem;
+    width: 32%;
+    height: 250px;
+    overflow: auto;
+    flex-flow: row wrap;
+   /* outline: 2px dotted red; */
 }
+
+/* * * * HEADER * * * */
 
 header {
     display: flex;
@@ -140,32 +147,7 @@ header {
     background-color: orange;
 }
 
-.flex-container {
-    margin-top: 1.5em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: row wrap;
-    border: 6px solid orange;
-
-}
-
-
-.flex-items {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-  font-size: 1.2rem;
-  width: 32%;
-  height: 250px;
-  overflow: auto;
-  flex-flow: row wrap;
-   /* outline: 2px dotted red; */
-}
-
-/* * * * HEADER * * * */
-
-h1 {
+header h1 {
     color: #000;
     padding-left: 2rem;
 
@@ -173,23 +155,32 @@ h1 {
 
 /* * * * MAIN * * * */
 
-p {
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(12, 150, 225, .5);
+    color: #fff;
+    height: 250px;
+    width: 100%;
+    border-bottom: 6px solid orange;
+}
+
+main p {
     padding: 1rem;
     font-size: 1.2em;
-
 }
+
+/* * * * DIV BOXES * * * */
 
 #div-1 p {
     padding-left: 2em;
 }
 
 span {
-  
     font-size: 1.7rem;
     text-transform: uppercase;
 }
-
-
 
 #div-1, #div-2 {
     border-right: 6px solid orange;
@@ -199,9 +190,12 @@ span {
 
 footer {
     background-color: orange;
+    display: flex;
     justify-content: right;
+    align-items: center;
 }
 
+/* * * * FOOTER SOCIAL MEDIA * * * */
 
 footer ul {
     list-style: none;
