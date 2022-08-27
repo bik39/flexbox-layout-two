@@ -135,7 +135,8 @@ footer {
     height: 250px;
     overflow: auto;
     flex-flow: row wrap;
-   /* outline: 2px dotted red; */
+   /* padding: .25rem;*/
+   /*outline: 2px dotted red; */
 }
 
 /* * * * HEADER * * * */
@@ -173,9 +174,16 @@ main p {
 
 /* * * * DIV BOXES * * * */
 
+
+.flex-items p {
+    padding-right: 1em;
+    padding-left: 1em;
+} 
+
+
 #div-1 p {
     padding-left: 2em;
-}
+} 
 
 span {
     font-size: 1.7rem;
